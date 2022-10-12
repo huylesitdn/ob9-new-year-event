@@ -1,0 +1,345 @@
+.withdrawal-page {
+
+  &__content {
+    padding: 30px;
+
+    &__title {
+      margin-bottom: 15px;
+      display: flex;
+      place-content: space-between;
+      place-items: flex-end;
+      border-bottom: 1px solid #EBEBEB;
+      padding-bottom: 20px;
+      margin-bottom: 50px;
+
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      color: #383B43;
+
+      a {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        color: #383B43;
+
+        img {
+          max-width: 14px;
+        }
+      }
+
+
+      .title {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 26px;
+        color: #383B43;
+        text-transform: uppercase;
+        margin-right: 5px;
+      }
+
+      .subtitle {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #94A6B7;
+      }
+    }
+
+
+    &__main-wallet {
+      &__item {
+        background: #FFFFFF;
+        border: 1px solid #A5A9B3;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 20px 15px;
+
+        display: flex;
+        place-content: flex-start;
+        place-items: center;
+        gap: 10px;
+
+        &__img {
+          img {
+            max-width: 40px;
+          }
+        }
+
+        &__title {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          color: #4B5E6F;
+          margin-bottom: 5px;
+        }
+
+        &__currency {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          color: #333333;
+
+          img {
+            max-width: 20px;
+          }
+        }
+      }
+    }
+
+    &__bank-account {
+      margin-top: 50px;
+
+      &__label {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        color: #383B43;
+
+        margin-bottom: 15px;
+      }
+
+      &__container {
+        &>div {}
+
+        .select-bank__item {
+          margin-bottom: 0;
+
+          &:nth-child(3) {
+            img {
+              max-width: 60px !important;
+            }
+          }
+        }
+
+        .select-bank__item__label,
+        &__item {
+          background: #FFFFFF;
+          border: 1px solid #EBEBEB;
+          box-sizing: border-box;
+          border-radius: 10px;
+
+          display: flex;
+          place-content: center;
+          place-items: center;
+          flex-direction: column;
+          gap: 10px;
+          min-height: 120px;
+          transition: .3s;
+
+          .select-bank__item__label__img {
+            height: 30px
+          }
+
+          &__img {
+
+            &.add {
+              img {
+                max-width: 16px;
+              }
+            }
+          }
+
+          &__text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+          }
+
+          &:hover {
+            border-color: #3678FE;
+          }
+
+        }
+      }
+    }
+
+    &__description {
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 18px;
+      color: #8590A6;
+      margin-top: 20px;
+    }
+
+    &__input {
+      margin-top: 50px;
+
+      .input-group-text {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 14px;
+        color: #000000;
+        background: transparent;
+        border: none;
+
+        &.left {
+          padding-left: 0;
+          padding-right: 20px;
+        }
+
+        &.right {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 14px;
+          color: #000000;
+          padding-right: 0;
+          padding-left: 20px;
+
+          img {
+            max-width: 16px;
+            margin-right: 5px;
+          }
+        }
+      }
+
+      .form-control {
+        border: 1px solid #A5A9B3;
+        box-sizing: border-box;
+        border-radius: 10px !important;
+        min-height: 40px;
+
+        &::placeholder {
+          font-size: 12px;
+          line-height: 14px;
+          color: #A5A9B3;
+        }
+      }
+    }
+
+    &__submit {
+      margin-top: 70px;
+
+      .btn {
+        width: 60%;
+        min-height: 50px;
+
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 16px;
+        text-align: center;
+        color: #FFFFFF;
+      }
+    }
+
+
+
+  }
+}
+
+#changePasswordModal,
+#verifyEmailModal,
+#manageBankAccountModal,
+#addBankModal,
+#addBankExistingUserModal {
+  .modal-content {
+    max-width: 700px;
+    margin: auto;
+
+    .add-bank-modal {
+      padding-top: 0;
+
+      .row {
+        margin-bottom: 40px;
+
+        .form-label {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 20px;
+          color: #000000;
+          margin-top: 15px;
+        }
+
+        .form-select,
+        .form-control {
+          font-weight: 700;
+          font-size: 16px;
+          // line-height: 16px;
+          color: #A5A9B3;
+
+          min-height: 50px;
+
+          border: 1px solid #A5A9B3;
+          box-sizing: border-box;
+          border-radius: 10px;
+
+          &::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 14px;
+            color: #A5A9B3;
+          }
+        }
+
+        .form-text {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 14px;
+          color: #A5A9B3;
+        }
+
+        .form-select {
+          font-weight: 400;
+          font-size: 16px;
+          // line-height: 16px;
+          color: #A5A9B3;
+        }
+
+        .input-group {
+          background: #FFFFFF;
+          border: 1px solid #A5A9B3;
+          box-sizing: border-box;
+          border-radius: 10px;
+
+          .form-control {
+            border: none;
+          }
+
+          .btn {
+            min-height: 30px;
+            height: 30px;
+            margin-top: 10px;
+            background: #4E7FFF;
+            border-radius: 5px;
+            margin-right: 10px;
+
+            display: flex;
+            place-content: center;
+            place-items: center;
+          }
+        }
+      }
+
+      .__submit {
+        margin-top: 20px;
+
+        .btn {
+          width: 100%;
+          min-height: 50px;
+          background: #597EF7;
+          border-radius: 10px;
+
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 16px;
+          text-align: center;
+          color: #FFFFFF;
+
+          display: flex;
+          place-content: center;
+          place-items: center;
+        }
+      }
+
+      .__help {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #000000;
+        margin-top: 10px;
+      }
+    }
+  }
+}

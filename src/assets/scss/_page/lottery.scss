@@ -1,0 +1,183 @@
+.lottery-page {
+  background-image: url(../images/lottery/top-bg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 0;
+  margin-top: 115px;
+  // background-size: contain;
+  background-size: auto 620px;
+
+  &__top-container {
+
+    &__content {
+      min-height: 620px;
+      display: flex;
+      place-content: center;
+      place-items: flex-start;
+      flex-direction: column;
+      gap: 40px;
+
+      &__title {
+        img {
+          max-width: 670px;
+        }
+      }
+
+      &__count {
+        img {
+          max-width: 620px;
+        }
+      }
+    }
+  }
+
+  &__action {
+    display: flex;
+    place-items: center;
+    place-content: center;
+    padding: 30px 0;
+    gap: 30px;
+
+    .btn {
+      width: 205px;
+      height: 70px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 20px;
+      text-align: center;
+      // color: #FFFFFF;
+      border: none;
+      background-color: transparent;
+
+      &-primary {
+        background-image: url(../images/lottery/bet-now-btn.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      &-outline-primary {
+        background-image: url(../images/lottery/result-btn.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__content {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: -80px;
+    min-height: 100vh;
+    padding: 0;
+
+    &__tab {
+      margin-top: -10px;
+
+      .nav-tabs {
+        padding: 15px 15px 0;
+        gap: 40px;
+        background: #E9E9E9;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        place-items: center;
+
+        .nav-item {
+          .nav-link {
+            margin-bottom: 0;
+            border: none;
+            border-bottom: 4px solid transparent;
+            padding: 0;
+            padding-bottom: 10px;
+            min-height: 70px;
+
+            img {
+              max-height: 41px;
+              max-width: 105px;
+            }
+
+            &:hover,
+            &.active {
+              border-bottom-color: #4E7FFF;
+              background: transparent;
+            }
+
+            &#log-3-tab {
+              img {
+                max-height: 45px;
+              }
+            }
+
+            &#log-4-tab {
+              img {
+                max-height: 51px;
+              }
+            }
+          }
+
+        }
+      }
+
+      .tab-content {
+        padding: 30px 15px;
+
+        .lottery-item {
+          &__title {
+            padding: 15px;
+            background: linear-gradient(90deg, #8EA9FF 0%, #678BFF 32.29%, #557BF7 100%);
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 18px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
+            span {
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 18px;
+            }
+          }
+
+          &__content {
+            display: flex;
+            place-content: space-around;
+            place-items: center;
+            padding: 50px 100px;
+
+            &__item {
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 30px;
+              text-align: center;
+              color: #000000;
+
+              span {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 30px;
+                text-align: center;
+                color: #000000;
+                display: block;
+              }
+
+              p {
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 50px;
+                text-align: center;
+                color: #4E7FFF;
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}

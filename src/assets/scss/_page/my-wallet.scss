@@ -1,0 +1,186 @@
+.my-wallet-page {
+  &__content {
+    &__title {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 26px;
+      color: #383B43;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    &__card {
+      background: #FFFFFF;
+      border: 1px solid #EBEBEB;
+      box-sizing: border-box;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 50px;
+
+      &__title {
+        padding: 15px;
+        border-bottom: 1px solid #EBEBEB;
+        background: #F2F5F8;
+
+        span {
+          border-left: 2px solid #4B5E6F;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 16px;
+          color: #383B43;
+          padding-left: 15px;
+        }
+      }
+
+      &__balance {
+        padding: 20px;
+
+        &__item {
+          background: #FFFFFF;
+          border: 1px solid #EBEBEB;
+          box-sizing: border-box;
+          border-radius: 10px;
+          padding: 15px;
+
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 16px;
+          color: #383B43;
+          height: 100%;
+
+          &.left {
+            display: flex;
+            place-content: flex-start;
+            place-items: center;
+            gap: 20px;
+
+            img {
+              max-width: 20px;
+              max-height: 20px;
+            }
+
+            .currency {
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 28px;
+              color: #383B43;
+            }
+          }
+
+          &.right {
+            display: flex;
+            place-content: space-between;
+            place-items: center;
+
+            a {
+              display: flex;
+              place-content: center;
+              place-items: center;
+              flex-direction: column;
+
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 16px;
+              text-align: center;
+              margin-top: -10px;
+
+              color: #383B43;
+
+              img {
+                max-width: 55px;
+              }
+            }
+          }
+        }
+      }
+
+      &__Recent_Transaction {
+        padding: 15px;
+
+        .table {
+          background: #fff;
+          margin-top: 15px;
+          border-radius: 10px 10px 0px 0px;
+          overflow: hidden;
+
+          &> :not(:first-child) {
+            border-top: 1px solid #EBEBEB;
+          }
+
+          thead {
+
+            tr {
+
+              th {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 14px;
+                text-align: center;
+                color: #4B5E6F;
+                vertical-align: middle;
+                border: none;
+                height: 50px;
+                background: #E9EDF8;
+
+                &:first-child {
+                  border-top-left-radius: 10px;
+                  border-bottom-left-radius: 10px;
+                }
+
+                &:last-child {
+                  border-top-right-radius: 10px;
+                  border-bottom-right-radius: 10px;
+                }
+              }
+            }
+          }
+
+          tbody {
+            border-top: none !important;
+
+            tr {
+              th {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                color: #333333;
+                background-color: #fff;
+                height: 40px;
+                vertical-align: middle;
+                border: none;
+                text-align: center;
+              }
+
+              td {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 14px;
+                text-align: center;
+                color: #000000;
+                background-color: #fff;
+                border: none;
+                height: 70px;
+                text-align: center;
+                vertical-align: middle;
+
+                img {
+                  max-width: 30px;
+                  margin-right: 5px;
+                }
+
+                &.success {
+                  color: #0FA54B;
+                }
+
+                &.failed {
+                  color: #FF0000;
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

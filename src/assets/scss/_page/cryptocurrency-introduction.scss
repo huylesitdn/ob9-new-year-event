@@ -1,0 +1,344 @@
+.cryptocurrency-introduction {
+  background-color: #f2f2f2;
+  padding-bottom: 100px;
+
+  .nav-child {
+    .title {
+      font-size: 15px !important;
+    }
+  }
+
+  &__content {
+
+    &__warning {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: #FF0000;
+      padding: 15px;
+    }
+
+    &__items {
+      position: relative;
+      background-color: #fff;
+      padding: 40px 15px 15px 15px;
+      margin-bottom: 15px;
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: justify;
+
+      &__title {
+        display: flex;
+        place-content: center;
+        place-items: center;
+        margin-bottom: 15px;
+
+        span {
+          font-family: 'Aldo the Apache';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 30px;
+          text-align: center;
+          color: #597EF7;
+          position: relative;
+          display: flex;
+          place-content: center;
+          place-items: center;
+          min-width: 250px;
+          margin-bottom: 20px;
+
+          &::after {
+            position: absolute;
+            width: 90px;
+            height: 15px;
+            left: -100px;
+            content: "";
+            background-image: url(../images/home/games_title1.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+
+          &::before {
+            position: absolute;
+            width: 90px;
+            height: 15px;
+            right: -100px;
+            content: "";
+            background-image: url(../images/home/games_title2.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+
+        }
+
+        &.long {
+          span {
+            &::after {
+              left: -110px;
+            }
+
+            &::before {
+              right: -110px;
+            }
+          }
+        }
+      }
+
+
+      // &__title {
+      //   background-image: url(../images/wallet/cryptocurrency-introduction/title-bg.png);
+      //   background-repeat: no-repeat;
+      //   font-weight: 500;
+      //   font-size: 14px;
+      //   line-height: 16px;
+      //   text-align: center;
+      //   color: #FFFFFF;
+      //   padding: 10px;
+      //   background-size: contain;
+      //   background-position: center center;
+      //   margin-top: 0px;
+      //   position: absolute;
+      //   width: 100%;
+      //   top: -5px;
+      //   left: 0;
+      //   right: 0;
+
+      //   &.long {
+      //     background-image: url(../images/wallet/cryptocurrency-introduction/title-bg1.png);
+      //   }
+      // }
+
+      &__subtitle {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 16px;
+        text-align: justify;
+        color: #666;
+        margin-bottom: 5px;
+      }
+
+      &__subtitle1 {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: justify;
+        color: #999;
+        margin-bottom: 5px;
+      }
+
+      &__description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: justify;
+        color: #000000;
+        margin-bottom: 15px;
+      }
+
+      &__table {
+        border: 1px solid #fff;
+        border-bottom: none;
+
+        .table {
+          margin-bottom: 0;
+          border-collapse: collapse;
+          overflow: hidden;
+
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          color: #000000;
+
+          &> :not(:first-child) {
+            border-top: 1px solid #fff;
+          }
+
+          thead {
+            border-color: #fff;
+
+            tr {
+              th {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 14px;
+                color: #000000;
+                height: 50px;
+                background: #E5ECFE;
+                text-align: center;
+                vertical-align: middle;
+              }
+            }
+          }
+
+          tbody {
+
+            tr {
+              border-color: #fff;
+
+              th {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                height: 50px;
+                vertical-align: middle;
+                text-align: center;
+                background: #F9FBFE;
+              }
+
+              td {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                text-align: center;
+                // border: 1px solid #000;
+                height: 50px;
+                vertical-align: middle;
+                text-align: center;
+                background: #F9FBFE;
+              }
+
+              &:nth-of-type(odd)>* {
+                --bs-table-accent-bg: #fff;
+              }
+            }
+          }
+        }
+      }
+
+      &__item1 {
+        margin: 15px -8px 0 -8px;
+
+        &__content {
+          padding-left: 8px;
+          padding-right: 8px;
+
+          &>div {
+            background: #FFFFFF;
+            border: 1px solid #EEEEEE;
+            box-sizing: border-box;
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            padding: 20px 8px;
+            height: 100%;
+            text-align: center;
+
+            .title {
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 16px;
+              text-align: center;
+              color: #000;
+              margin: 10px 0 15px;
+              // min-height: 50px;
+              display: flex;
+              place-items: center;
+              place-content: flex-start;
+            }
+
+            .description {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 14px;
+              text-align: justify;
+              color: #666;
+            }
+          }
+        }
+      }
+
+      &__item2 {
+        // margin: 15px -8px 0 -8px;
+
+        & > div[class*="col-"] {
+          padding-left: 8px;
+          padding-right: 8px;
+        }
+
+        &__content {
+          border: 1px solid #EEEEEE;
+          box-sizing: border-box;
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+          border-radius: 10px;
+          background: #FFFFFF;
+          place-items: center;
+          margin-bottom: 15px;
+          margin-left: 0;
+          margin-right: 0;
+
+          .popular-icon {
+            max-width: 100px;
+            margin: auto;
+          }
+
+          &>div {
+
+            &:first-child {
+              // width: 90px;
+              // display: contents;
+              // padding: 15px;
+            }
+
+            &:last-child {
+
+              padding: 15px 10px 15px 0;
+              height: 100%;
+
+
+              .title {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 16px;
+                color: #000;
+                margin-bottom: 15px;
+              }
+
+              .description {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                text-align: justify;
+                color: #666;
+
+                ul {
+                  padding-left: 15px;
+
+                  li {
+                    padding-bottom: 5px;
+                    margin-bottom: 15px;
+                    font-weight: 400;
+                    font-size: 14px !important;
+                    line-height: 16px !important;
+
+                    &:last-child {
+                      padding-bottom: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      ul {
+        margin-bottom: 0;
+
+        li {
+          padding-bottom: 15px;
+          font-weight: 400;
+          font-size: 14px !important;
+          line-height: 16px !important;
+          color: #666 !important;
+          margin-bottom: 5px !important;
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.my-profile-page {
+  &__content {
+    &__title {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 21px;
+      color: #333333;
+
+      margin-bottom: 30px;
+    }
+
+    &__input {
+      margin-bottom: 40px;
+      place-items: center;
+
+      label {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 14px;
+        color: #000000;
+      }
+
+      .form-control {
+        background: #F9F9F9;
+        border: 1px solid #A5A9B3;
+        box-sizing: border-box;
+        border-radius: 10px;
+        min-height: 50px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 14px;
+        color: #A5A9B3;
+      }
+    }
+
+    hr {
+      background: #EBEBEB;
+      margin-bottom: 30px;
+    }
+
+    &__verify {
+      display: flex;
+      place-content: flex-start;
+      place-items: center;
+      gap: 30px;
+      margin-bottom: 40px;
+
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 14px;
+      color: #000000;
+
+      span {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 14px;
+        color: #000000;
+      }
+
+      .btn {
+        min-height: 40px;
+      }
+    }
+
+
+  }
+}

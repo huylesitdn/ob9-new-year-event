@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: ''})
+  <body>
+    
+    <!-- Content -->
+    <section class="main account-layout xxx-page">
+      @@include('../components/base/navbar.html', {active: 1})
+
+      <div class="account-layout__container container">
+        <div class="row account-layout__container__content">
+          <div class="col-3 account-layout__container__content__left">
+            @@include('../components/base/profile-navbar.html', {active: 4})
+          </div>
+          <div class="col-9 account-layout__container__content__right">
+
+            <div class="account-layout__container__content__right__content xxx-page__content">
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>
