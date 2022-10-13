@@ -41,6 +41,15 @@ img {
   padding-right: var(--bs-gutter-x-mobile, 0.75rem);
   padding-left: var(--bs-gutter-x-mobile, 0.75rem); }
 
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1230px !important; } }
+
 @media only screen and (max-width: 1400px) {
   .container,
   .container-lg,

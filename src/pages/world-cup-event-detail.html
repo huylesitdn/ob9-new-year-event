@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'World Cup Event Detail'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main world-cup-block world-cup-page">
+      <!-- @@include('../components/base/navbar.html', {active: 1}) -->
+      @@include('../components/base/navbar-without-login.html', {active: 1})
+
+      <!-- content -->
+      <div class="world-cup-page__top-banner" data-i18n="world_up_page.top_banner"></div>
+      <div class="world-cup-block__content">
+        <div class="container world-cup-page__container">
+          <div class="block-content">
+            <div class="world-cup-page__container__block_content event-detail">
+              <div class="header" data-i18n="world_up_page.rule_of_activity"></div>
+              <div class="event-detail-content">
+                <div class="row">
+                  <div class="col-lg-6 col-12">
+                    <a href="#" data-i18n="world_up_page.rule_of_activity__top_img1"></a>
+                  </div>
+                  <div class="col-lg-6 col-12">
+                    <a href="#" data-i18n="world_up_page.rule_of_activity__top_img2"></a>
+                  </div>
+                </div>
+                <div class="pt-5" data-i18n="world_up_page.rule_of_activity__content1"></div>
+                <div class="pt-4" data-i18n="world_up_page.rule_of_activity__content2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content -->
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

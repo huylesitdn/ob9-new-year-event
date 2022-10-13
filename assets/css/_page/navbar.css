@@ -32,6 +32,9 @@
         .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link-img {
           height: 20px;
           margin-bottom: 7px; }
+          .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link-img.world-cup img {
+            max-height: 45px;
+            max-width: initial; }
           .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link-img img {
             max-width: 20px;
             max-height: 20px; }

@@ -1,0 +1,243 @@
+.world-cup-page {
+  &__top-banner {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__container {
+    &__block_content {
+      border-radius: 15px;
+      height: 100%;
+
+      background-size: 101%;
+      background-repeat: no-repeat;
+      background-image: url(../images/world-cup/en/BOX.png);
+      background-position: center;
+
+      font-size: 18px;
+      line-height: 25px;
+
+      &.event-detail {
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // background-image: url(../images/world-cup/en/Line-frame.png);
+        // background-position: top;
+        // padding: 0 30px 30px;
+        background-image: none;
+        position: relative;
+        padding-bottom: 50px;
+        padding-top: 20px;
+
+        &::before {
+          position: absolute;
+          left: 0;
+          content: "";
+          width: 100%;
+          height: 50px;
+          background-position: 0 0;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-image: url(../images/world-cup/en/common-border-top.f3155c653ae076c1c651baab081c12eb.webp);
+        }
+
+        &::after {
+          position: absolute;
+          left: 0;
+          content: "";
+          width: 100%;
+          height: 50px;
+          background-position: 0 0;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-image: url(../images/world-cup/en/common-border-bottom.86132a89c2cafb679ad4578bbbb8655a.webp);
+        }
+
+        .event-detail-content {
+          // background-position: 0 0;
+          background-size: 100%;
+          background-repeat: repeat-y;
+          background-image: url(../images/world-cup/en/common-border-middle.88ffae16aba74af2bbc9473fc6f103b6.webp);
+          padding: 0 30px 30px;
+        }
+
+        .header {
+          font-size: 20px;
+          font-weight: 600;
+          text-transform: uppercase;
+          text-align: center;
+          margin-top: -5px;
+          margin-bottom: 33px;
+        }
+
+      }
+
+
+      &__title {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../images/world-cup/en/PINK_LongBAR.png);
+        background-position: center;
+        // background: rgb(207, 60, 102);
+        // background: linear-gradient(90deg, rgba(207, 60, 102, 1) 0%, rgba(237, 130, 157, 1) 36%, rgba(231, 115, 145, 1) 66%, rgba(207, 60, 102, 1) 100%);
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        padding: 8px 15px;
+        display: inline-block;
+      }
+
+      &__table {
+        margin-top: 15px;
+
+        table {
+          margin-bottom: 0;
+
+          &>:not(caption)>*>* {
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+
+          thead {
+            tr {
+              th {
+                background-image: url(../images/world-cup/en/PINK_BAR.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                // background: rgb(207, 60, 102);
+                // background: linear-gradient(21deg, rgba(207, 60, 102, 1) 20%, rgba(229, 88, 142, 1) 23%, rgba(207, 60, 102, 1) 72%, rgba(241, 110, 157, 1) 78%);
+                color: #fff;
+                border-right: 3px solid #f2f2f4;
+
+                &:last-child {
+                  border-right: none;
+                }
+              }
+            }
+          }
+
+          tbody {
+            border-top: none !important;
+
+            tr {
+              td {
+                border-bottom: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .play-now {
+      background-size: cover;
+      background-repeat: repeat-y;
+      background-image: url(../images/world-cup/en/bg_loading_bonus.jpg);
+      position: relative;
+      border: 3px solid #cf3c66;
+      border-radius: 8px;
+      min-height: 500px;
+
+      &>div {
+        background-color: rgba(0, 0, 0, 0.5);
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      &__ticker_remaining {
+        position: absolute;
+        left: 30px;
+        top: 15px;
+        background-image: url(../images/world-cup/en/BAR_Ticket_Remaining.png);
+        min-width: 290px;
+        min-height: 50px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        place-items: center;
+        place-content: space-around;
+
+        .text {
+          font-size: 20px;
+          font-weight: 400;
+        }
+
+        .number {
+          padding-right: 25px;
+          font-size: 20px;
+          font-weight: 600;
+          color: #fff;
+        }
+      }
+
+      &__world-cup-logo {
+        width: 100px;
+        right: 30px;
+        top: 15px;
+        position: absolute;
+      }
+
+      &__tap-to-play {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        flex-direction: column;
+        gap: 15px;
+
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        text-transform: uppercase;
+
+        img {
+          max-width: 90px;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+
+    &__how-to-play-img {
+      width: 100%;
+      border: 3px solid #cf3c66;
+      border-radius: 15px;
+    }
+
+    &__how-to-play-btn {
+      margin: auto;
+      margin-top: 15px;
+      background-image: url(../images/world-cup/en/Bontton.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: transparent !important;
+      border: none;
+      // background: rgb(2, 0, 36);
+      // background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(237, 130, 157, 1) 0%, rgba(207, 60, 102, 1) 100%);
+      // border: 2px solid #cf3c66;
+      border-radius: 8px;
+      min-height: 50px;
+      min-width: 200px;
+      text-transform: uppercase;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

@@ -1,336 +1,40 @@
-.select-bank {
-  margin-left: -8px;
-  margin-right: -8px;
+.world-cup-block {
+  padding-bottom: 0;
 
-  &__item {
-    margin-bottom: 15px;
-    padding-left: 8px;
-    padding-right: 8px;
-
-    &__label {
-      background: #FFFFFF;
-      border: 1px solid #EBEBEB;
-      box-sizing: border-box;
-      border-radius: 10px;
-      min-height: 100px;
-      width: 100%;
-      display: flex;
-      place-content: space-around;
-      place-items: center;
-      flex-direction: column;
-      text-align: center;
-      position: relative;
-      padding: 8px 0;
-      cursor: pointer;
-
-      .checkmark {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        border: 1px solid transparent;
-        border-radius: 10px;
-
-        &:hover {
-          border-color: #597EF7;
-        }
-      }
-
-      &__checkbox {
-        display: none;
-
-        &:checked {
-          ~.checkmark {
-            border-color: #597EF7;
-
-            &::before {
-              content: "";
-              width: 18px;
-              height: 19px;
-              background-image: url(../images/wallet/check.png);
-              background-repeat: no-repeat;
-              background-size: cover;
-              position: absolute;
-              bottom: 0;
-              right: 0;
-              z-index: 9;
-            }
-          }
-        }
-      }
-
-
-
-      &__img {
-        img {
-          max-height: 30px;
-          max-width: 30px;
-        }
-      }
-
-      &__title {
-        font-size: 14px;
-        line-height: 14px;
-        text-align: center;
-        color: #000000;
-      }
-    }
+  &__content {
+    padding: 30px 0;
+    position: relative;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-image: url(../images/f70f8b4384ee4d20a512f8fae66140d8.jpeg);
   }
-}
 
+  .block-content {
+    border-radius: 20px;
+    background: #fff;
+    border: 1px solid #e0e7fa;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    // -webkit-box-shadow: 0 8px 16px 0 rgba(51, 58, 218, 0.09);
+    // box-shadow: 0 8px 16px 0 rgba(51, 58, 218, 0.09);
+    padding: 30px;
+    margin-bottom: 30px;
+    height: 100%;
 
-.deposit-amount {
-  margin-left: -8px;
-  margin-right: -8px;
+    &.text {
 
-  &__select-bank,
-  &__select-promotion {
-    display: flex;
-    place-content: space-between;
-    place-items: center;
-    border-bottom: 2px solid #EEEEEE;
-    padding: 10px 0;
-    margin-bottom: 40px;
-    cursor: pointer;
-
-    &__input {
-      &__label {
+      h3 {
+        color: #fcb33c;
+        text-transform: uppercase;
+        font-size: 20px;
         font-weight: 600;
-        font-size: 14px;
-        line-height: 14px;
-        color: #000000;
-        padding-bottom: 10px;
-        text-align: left;
+        margin-bottom: 20px;
       }
 
-      &__placeholder {
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 14px;
-        color: #A5A9B3;
-      }
-    }
-
-    img {}
-  }
-
-  &__summary {
-    margin-top: -15px;
-    margin-bottom: 15px;
-
-    &__title {
-      background: #597EF7;
-      border-radius: 10px 10px 0px 0px;
-      padding: 15px;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 14px;
-      text-align: center;
-      color: #FFFFFF;
-    }
-
-    &__content {
-      background: #FFFFFF;
-      border: 1px solid #A5A9B3;
-      border-top: none;
-      box-sizing: border-box;
-      border-radius: 10px;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-      padding: 15px;
-      text-align: left;
-
-      font-size: 16px;
-      line-height: 20px;
-      color: #000000;
-
-      &__sub {
-        background: #EEEEEE;
-        border-radius: 10px;
-        padding: 15px 30px;
-        margin: 10px;
-      }
-    }
-  }
-
-  &__action {
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    text-align: center;
-    color: #000000;
-
-    .btn {
-      min-height: 50px;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 16px;
-      text-align: center;
-      color: #FFFFFF;
-      text-transform: uppercase;
-
-      &-choose {
-        min-height: 40px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 14px;
-        text-align: center;
-        color: #000000;
-        margin-bottom: 40px;
-        border: 1px solid #A5A9B3;
-        box-sizing: border-box;
-        border-radius: 10px;
-        display: flex;
-        place-items: center;
-        place-content: center;
-        gap: 5px;
-
-        &:hover,
-        &:active {
-          background-color: #fff;
-        }
-
-        img {
-          max-width: 24px;
-        }
-      }
-    }
-  }
-
-  &__input-group {
-    margin-bottom: 15px;
-
-    .form-control {
-      background: #FFFFFF;
-      border: 1px solid #A5A9B3;
-      box-sizing: border-box;
-      border-radius: 10px !important;
-      min-height: 40px;
-
-      &::placeholder {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        color: #A5A9B3;
-      }
-    }
-
-    .input-group-text {
-      background: #FFFFFF;
-      border: none;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 14px;
-      color: #000000;
-      padding-left: 0;
-    }
-  }
-
-  .deposit-minimun-crypto {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-    color: #8590AD;
-
-    span {
-      font-weight: 600;
-      font-size: 12px;
-      line-height: 14px;
-      color: #FF0000;
-    }
-  }
-
-  &__item {
-    margin-bottom: 15px;
-    padding-left: 8px;
-    padding-right: 8px;
-
-    .info-link {
-      font-weight: 600;
-      font-size: 12px;
-      line-height: 14px;
-      text-align: right;
-      color: #4080FF;
-
-      display: flex;
-      place-content: flex-start;
-      place-items: center;
-      gap: 5px;
-      height: 100%;
-
-      .icon {
-        max-width: 18px;
-      }
-    }
-
-
-    &__label {
-      background: #FFFFFF;
-      border: 1px solid #EEEEEE;
-      box-sizing: border-box;
-      border-radius: 10px;
-      min-height: 50px;
-      width: 100%;
-      display: flex;
-      place-content: space-around;
-      place-items: center;
-      flex-direction: column;
-      text-align: center;
-      position: relative;
-      padding: 8px 0;
-      cursor: pointer;
-
-      .checkmark {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        border: 1px solid transparent;
-        border-radius: 10px;
-      }
-
-      &:hover {
-        .checkmark {
-          border-color: #597EF7;
-        }
-      }
-
-      &__checkbox {
-        display: none;
-
-        &:checked {
-          ~.checkmark {
-            border-color: #597EF7;
-
-            &::before {
-              content: "";
-              width: 18px;
-              height: 19px;
-              background-image: url(../images/wallet/check.png);
-              background-repeat: no-repeat;
-              background-size: cover;
-              position: absolute;
-              bottom: 0;
-              right: 0;
-              z-index: 9;
-            }
-          }
-        }
-      }
-
-      &__title {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 14px;
-        text-align: center;
-        color: #000000;
+      .title {
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 18px;
       }
     }
   }

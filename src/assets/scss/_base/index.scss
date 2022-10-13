@@ -47,6 +47,18 @@ img {
   padding-left: var(--bs-gutter-x-mobile, .75rem);
 }
 
+@media (min-width: 1400px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1230px !important;
+  }
+}
+
 @media only screen and (max-width: 1400px) {
 
   .container,
@@ -75,6 +87,7 @@ img {
 
 
 @media only screen and (max-width: 1050px) {
+
   html,
   body {
     overflow-x: hidden !important;
