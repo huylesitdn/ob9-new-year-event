@@ -20,7 +20,7 @@ body {
   line-height: 16px;
   font-weight: 300;
   // max-width: var(--max-with);
-  min-width: var(--min-with);
+  // min-width: var(--min-with);
   margin: auto;
   font-family: 'Roboto', sans-serif;
   min-height: 100vh;
@@ -147,7 +147,13 @@ img {
   padding-top: 120px;
   padding-bottom: 80px;
   min-height: 100vh;
+
+  @media only screen and (max-width: 992px) {
+    padding-top: 50px;
+    padding-bottom: 50px !important;
+  }
 }
+
 
 a {
   color: #597EF7;

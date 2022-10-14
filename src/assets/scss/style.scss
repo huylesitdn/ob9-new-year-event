@@ -21,6 +21,10 @@
     margin-bottom: 30px;
     height: 100%;
 
+    @media only screen and (max-width: 576px) {
+      padding: 15px;
+    }
+
     &.text {
 
       h3 {

@@ -6,7 +6,12 @@
     <!-- Content -->
     <section class="main world-cup-block world-cup-page">
       <!-- @@include('../components/base/navbar.html', {active: 1}) -->
-      @@include('../components/base/navbar-without-login.html', {active: 1})
+      <div class="d-none d-lg-block">
+        @@include('../components/base/navbar-without-login.html', {active: 1})
+      </div>
+      <div class="d-block d-lg-none">
+        @@include('../components/base/navbar-child.html', {back_url: '/', title: 'world_up_page.header'})
+      </div>
 
       <!-- content -->
       <div class="world-cup-page__top-banner" data-i18n="world_up_page.top_banner"></div>
@@ -30,7 +35,7 @@
             <button class="btn btn-primary world-cup-page__container__how-to-play-btn" data-i18n="world_up_page.how_to_play"></button>
           </div>
           <div class="row">
-            <div class="col-lg-6 col-12">
+            <div class="col-lg-6 col-12 mb-4">
               <div class="block-content text-center">
                 <div class="world-cup-page__container__block_content">
                   <span class="world-cup-page__container__block_content__title" data-i18n="world_up_page.YOUR_PRIZE_HISTORY"></span>
@@ -85,11 +90,17 @@
                         </tr>
                       </tbody>
                     </table>
+                    <div class="px-4">
+                      <a href="#" class="table-footer">
+                        <span data-i18n="world_up_page.next"></span>
+                        <img src="assets/icons/right.png" />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-12">
+            <div class="col-lg-6 col-12 mb-4">
               <div class="block-content text">
                 <div class="world-cup-page__container__block_content p-4">
                   <h3 data-i18n="world_up_page.PENALTY_KICKS_MINI_GAMES_T_C"></h3>
@@ -107,9 +118,13 @@
         </div>
       </div>
       <!-- content -->
+
+      <div class="d-block d-lg-none">
+        @@include('../components/base/navbar-bottom-mobile.html', {active: -1})
+      </div>
       
     </section>
-    @@include('../components/base/navbar-bottom.html', {active: 0})
+    <!-- @@include('../components/base/navbar-bottom.html', {active: 0}) -->
     
     @@include('../components/base/footer.html')
   </body>

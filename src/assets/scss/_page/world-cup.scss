@@ -2,6 +2,10 @@
   &__top-banner {
     img {
       width: 100%;
+      @media only screen and (max-width: 576px) {
+        min-height: 200px;
+        object-fit: cover;
+      }
     }
   }
 
@@ -10,12 +14,13 @@
       border-radius: 15px;
       height: 100%;
 
-      background-size: 101%;
+      // background-size: 101%;
+      background-size: initial;
       background-repeat: no-repeat;
       background-image: url(../images/world-cup/en/BOX.png);
       background-position: center;
 
-      font-size: 18px;
+      font-size: 14px;
       line-height: 25px;
 
       &.event-detail {
@@ -85,14 +90,27 @@
         font-size: 20px;
         font-weight: 600;
         color: #fff;
-        padding: 8px 15px;
+        padding: 3px 15px;
         display: inline-block;
       }
 
       &__table {
         margin-top: 15px;
 
-        table {
+        .table-footer {
+          text-align: right;
+          padding-top: 10px;
+          border-top: 2px solid #999;
+          display: flex;
+          place-content: flex-end;
+          place-items: center;
+          gap: 5px;
+
+          font-weight: 600;
+          color: initial;
+        }
+
+        .table {
           margin-bottom: 0;
 
           &>:not(caption)>*>* {
@@ -111,6 +129,8 @@
                 // background: linear-gradient(21deg, rgba(207, 60, 102, 1) 20%, rgba(229, 88, 142, 1) 23%, rgba(207, 60, 102, 1) 72%, rgba(241, 110, 157, 1) 78%);
                 color: #fff;
                 border-right: 3px solid #f2f2f4;
+
+                font-size: 18px;
 
                 &:last-child {
                   border-right: none;
@@ -134,15 +154,28 @@
 
     .play-now {
       background-size: cover;
-      background-repeat: repeat-y;
+      background-repeat: no-repeat;
       background-image: url(../images/world-cup/en/bg_loading_bonus.jpg);
+      background-position: center;
       position: relative;
       border: 3px solid #cf3c66;
       border-radius: 8px;
       min-height: 500px;
 
+      @media only screen and (max-width: 768px) {
+        min-height: 300px;
+      }
+
+      @media only screen and (max-width: 576px) {
+        min-height: 250px;
+      }
+
+      @media only screen and (max-width: 426px) {
+        min-height: 200px;
+      }
+
       &>div {
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.7);
         content: "";
         width: 100%;
         height: 100%;
@@ -176,6 +209,10 @@
           font-weight: 600;
           color: #fff;
         }
+
+        @media only screen and (max-width: 768px) {
+          display: none;
+        }
       }
 
       &__world-cup-logo {
@@ -183,6 +220,10 @@
         right: 30px;
         top: 15px;
         position: absolute;
+
+        @media only screen and (max-width: 768px) {
+          display: none;
+        }
       }
 
       &__tap-to-play {
@@ -202,11 +243,19 @@
         color: #fff;
         text-transform: uppercase;
 
+        @media only screen and (max-width: 426px) {
+          font-size: 18px;
+        }
+
         img {
           max-width: 90px;
 
           &:hover {
             opacity: 0.8;
+          }
+
+          @media only screen and (max-width: 426px) {
+            max-width: 50px;
           }
         }
       }
