@@ -2,6 +2,7 @@
   &__top-banner {
     img {
       width: 100%;
+
       @media only screen and (max-width: 576px) {
         min-height: 200px;
         object-fit: cover;
@@ -10,18 +11,103 @@
   }
 
   &__container {
+    &__tab {
+      .tab-content {
+        padding-top: 30px;
+      }
+
+      .nav-tabs {
+        border-bottom: none;
+
+        .nav-item {
+          @media only screen and (max-width: 620px) {
+            flex: 1 1;
+          }
+
+          .nav-link {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            border-top: 2px solid #a7c5ff;
+            border-bottom: 2px solid #a7c5ff;
+            border-left: 1px solid #a7c5ff;
+            border-right: 1px solid #a7c5ff;
+            background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dbe6ff));
+            background: -webkit-linear-gradient(top, #ffffff, #dbe6ff);
+            background: linear-gradient(to bottom, #ffffff, #dbe6ff);
+            -webkit-box-shadow: inset 0 -4px 8px 0 #fff;
+            box-shadow: inset 0 -4px 8px 0 #fff;
+            text-shadow: none;
+            min-height: 60px;
+            border-radius: 0;
+            font-size: 18px;
+
+            &.active {
+              color: #fff;
+              text-shadow: none;
+              background: -webkit-gradient(linear, left top, left bottom, from(#83a7ff), to(#276ff6));
+              background: -webkit-linear-gradient(top, #83a7ff, #276ff6);
+              background: linear-gradient(to bottom, #83a7ff, #276ff6);
+              border: 2px solid #719cfd;
+              -webkit-box-shadow: 0 10px 20px 0 rgba(57, 122, 248, 0.2), inset 0 -3px 10px 0 rgba(204, 224, 255, 0.3);
+              box-shadow: 0 10px 20px 0 rgba(57, 122, 248, 0.2), inset 0 -3px 10px 0 rgba(204, 224, 255, 0.3);
+            }
+
+            @media only screen and (max-width: 768px) {
+              font-size: 16px;
+              min-height: 50px;
+            }
+
+            @media only screen and (max-width: 620px) {
+              font-size: 14px;
+              font-weight: 20px;
+              padding-left: 6px;
+              padding-right: 6px;
+            }
+          }
+
+          &:first-child {
+            .nav-link {
+              border-top-left-radius: 10px;
+              border-bottom-left-radius: 10px;
+              border-left: 2px solid #a7c5ff;
+            }
+          }
+
+          &:last-child {
+            .nav-link {
+              border-top-right-radius: 10px;
+              border-bottom-right-radius: 10px;
+              border-right: 2px solid #a7c5ff;
+            }
+          }
+        }
+      }
+    }
+
     &__block_content {
       border-radius: 15px;
       height: 100%;
 
       // background-size: 101%;
-      background-size: initial;
+      background-size: cover;
       background-repeat: no-repeat;
-      background-image: url(../images/world-cup/en/BOX.png);
-      background-position: center;
+      background-image: url(../images/world-cup/en/box-bg.png);
+      background-position: top;
 
       font-size: 14px;
       line-height: 25px;
+
+      p {
+        margin-bottom: 10px;
+        line-height: 20px;
+        font-size: 14px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
 
       &.event-detail {
         // background-size: cover;
@@ -35,8 +121,9 @@
         padding-top: 20px;
 
         &::before {
-          position: absolute;
-          left: 0;
+          // position: absolute;
+          // left: 0;
+          display: block;
           content: "";
           width: 100%;
           height: 50px;
@@ -44,6 +131,26 @@
           background-repeat: no-repeat;
           background-size: 100%;
           background-image: url(../images/world-cup/en/common-border-top.f3155c653ae076c1c651baab081c12eb.webp);
+
+          @media only screen and (max-width: 1200px) {
+            height: 40px;
+          }
+
+          @media only screen and (max-width: 992px) {
+            height: 30px;
+          }
+
+          @media only screen and (max-width: 768px) {
+            height: 25px;
+          }
+
+          @media only screen and (max-width: 640px) {
+            height: 20px;
+          }
+
+          @media only screen and (max-width: 550px) {
+            height: 15px;
+          }
         }
 
         &::after {
@@ -64,15 +171,133 @@
           background-repeat: repeat-y;
           background-image: url(../images/world-cup/en/common-border-middle.88ffae16aba74af2bbc9473fc6f103b6.webp);
           padding: 0 30px 30px;
+
+          @media only screen and (max-width: 768px) {
+            padding: 0 15px 15px;
+            padding-top: 30px;
+          }
+
+          &__header {
+            text-align: center;
+
+            img {
+              max-width: 350px;
+              margin: 20px auto 50px;
+            }
+          }
+
+          &__item {
+            display: flex;
+            place-content: flex-start;
+            place-items: center;
+            font-size: 18px;
+            line-height: 26px;
+            gap: 15px;
+            margin-bottom: 5px;
+
+            &__title {
+              color: #ba1643;
+              font-weight: 600;
+            }
+
+            &__content {}
+
+            @media only screen and (max-width: 576px) {
+              font-size: 14px;
+              list-style: 18px;
+            }
+          }
+
+          &__description {
+            list-style: numeric;
+            margin-top: 50px;
+
+            li {
+              font-size: 18px;
+              line-height: 26px;
+              margin-bottom: 10px;
+
+              @media only screen and (max-width: 576px) {
+                font-size: 14px;
+                list-style: 18px;
+              }
+            }
+          }
+
+          &__table {
+            margin-top: 50px;
+
+            .table {
+              border-top-left-radius: 12px;
+              border-top-right-radius: 12px;
+              overflow: hidden;
+
+              &>:not(caption)>*>* {
+                padding-top: 10px;
+                padding-bottom: 10px;
+              }
+
+              thead {
+                tr {
+                  th {
+                    background-image: url(../images/world-cup/en/PINK_BAR.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    // background: rgb(207, 60, 102);
+                    // background: linear-gradient(21deg, rgba(207, 60, 102, 1) 20%, rgba(229, 88, 142, 1) 23%, rgba(207, 60, 102, 1) 72%, rgba(241, 110, 157, 1) 78%);
+                    color: #fff;
+                    // border-right: 1px solid #ffcfdb;
+                    border: 1px solid #ffcfdb !important;
+
+                    font-size: 18px;
+
+                    @media only screen and (max-width: 576px) {
+                      font-size: 14px;
+                      list-style: 18px;
+                    }
+                  }
+                }
+              }
+
+              tbody {
+                border-top: none !important;
+
+                tr {
+                  border-color: #ffcfdb;
+
+                  td {
+                    border-bottom: none;
+                  }
+                }
+              }
+            }
+          }
         }
 
         .header {
-          font-size: 20px;
+          font-size: 25px;
           font-weight: 600;
           text-transform: uppercase;
           text-align: center;
-          margin-top: -5px;
-          margin-bottom: 33px;
+          margin-top: -8px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 22px;
+          display: flex;
+          place-content: center;
+          place-items: center;
+
+          span {
+            background: #fff;
+            padding: 0 20px;
+          }
+
+          @media only screen and (max-width: 576px) {
+            top: 16px;
+            font-size: 18px;
+          }
         }
 
       }
@@ -131,6 +356,7 @@
                 border-right: 3px solid #f2f2f4;
 
                 font-size: 18px;
+                vertical-align: middle;
 
                 &:last-child {
                   border-right: none;
@@ -145,6 +371,7 @@
             tr {
               td {
                 border-bottom: none;
+                vertical-align: middle;
               }
             }
           }
@@ -286,6 +513,11 @@
 
       &:hover {
         opacity: 0.7;
+      }
+
+      &:active,
+      &:focus {
+        box-shadow: none !important;
       }
     }
   }

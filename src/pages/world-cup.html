@@ -18,101 +18,27 @@
       <div class="world-cup-page__top-banner d-block d-lg-none" data-i18n="world_up_page.top_banner_mobile"></div>
       <div class="world-cup-block__content">
         <div class="container world-cup-page__container">
-          <div class="block-content text-center">
-            <div class="play-now">
-              <div>
-                <div class="play-now__ticker_remaining">
-                  <span class="text" data-i18n="world_up_page.ticket_remaining"></span>
-                  <span class="number">9</span>
-                </div>
-                <img class="play-now__world-cup-logo" src="assets/images/world-cup/en/c4639855e84f992b7dbed318972b86fd.png" />    
-                <a href="#" class="play-now__tap-to-play">
-                  <img src="assets/images/world-cup/en/tap.png" />    
-                  <span data-i18n="world_up_page.Tap_to_play_now"></span>
-                </a>
+          <div class="world-cup-page__container__tab">
+            <ul class="nav nav-tabs nav-fill" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="penalty-shoot-tab" data-bs-toggle="tab" data-bs-target="#penalty-shoot" type="button" role="tab" aria-controls="penalty-shoot" aria-selected="true" data-i18n="world_up_page.PENALTY_SHOOT"></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="sports-realbet-bonus-tab" data-bs-toggle="tab" data-bs-target="#sports-realbet-bonus" type="button" role="tab" aria-controls="sports-realbet-bonus" aria-selected="false" data-i18n="world_up_page.WEEKLY_SPORTS_REALBET_BONUS"></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="daily-prediction-tab" data-bs-toggle="tab" data-bs-target="#daily-prediction" type="button" role="tab" aria-controls="daily-prediction" aria-selected="false" data-i18n="world_up_page.DAILY_PREDICTION"></button>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="penalty-shoot" role="tabpanel" aria-labelledby="penalty-shoot-tab">
+                @@include('../components/penalty-shoot.html')
               </div>
-            </div>
-            <!-- <img class="world-cup-page__container__how-to-play-img" src="assets/images/how-to-play.png" /> -->
-            <button class="btn btn-primary world-cup-page__container__how-to-play-btn" data-i18n="world_up_page.how_to_play"></button>
-          </div>
-          <div class="row">
-            <div class="col-lg-6 col-12 mb-4">
-              <div class="block-content text-center">
-                <div class="world-cup-page__container__block_content">
-                  <span class="world-cup-page__container__block_content__title" data-i18n="world_up_page.YOUR_PRIZE_HISTORY"></span>
-                  <div class="world-cup-page__container__block_content__table table-responsive">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th width="50%" data-i18n="world_up_page.Date"></th>
-                          <th width="50%" data-i18n="world_up_page.Realbet"></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>15/7/2022</td>
-                          <td>SGD 5,000</td>
-                        </tr>
-                        <tr>
-                          <td>15/7/2022</td>
-                          <td>SGD 5,000</td>
-                        </tr>
-                        <tr>
-                          <td>15/7/2022</td>
-                          <td>SGD 5,000</td>
-                        </tr>
-                        <tr>
-                          <td>15/7/2022</td>
-                          <td>SGD 5,000</td>
-                        </tr>
-                        <tr>
-                          <td>15/7/2022</td>
-                          <td>SGD 5,000</td>
-                        </tr>
-                        <tr>
-                          <td>15/7/2022</td>
-                          <td>SGD 5,000</td>
-                        </tr>
-                        <tr>
-                          <td>15/7/2022</td>
-                          <td>SGD 5,000</td>
-                        </tr>
-                        <tr>
-                          <td>15/7/2022</td>
-                          <td>SGD 5,000</td>
-                        </tr>
-                        <tr>
-                          <td>15/7/2022</td>
-                          <td>SGD 5,000</td>
-                        </tr>
-                        <tr>
-                          <td>15/7/2022</td>
-                          <td>SGD 5,000</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <div class="px-4">
-                      <a href="#" class="table-footer">
-                        <span data-i18n="world_up_page.next"></span>
-                        <img src="assets/icons/right.png" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
+              <div class="tab-pane fade" id="sports-realbet-bonus" role="tabpanel" aria-labelledby="sports-realbet-bonus-tab">
+                @@include('../components/sports-realbet-bonus.html')
               </div>
-            </div>
-            <div class="col-lg-6 col-12 mb-4">
-              <div class="block-content text">
-                <div class="world-cup-page__container__block_content p-4">
-                  <h3 data-i18n="world_up_page.PENALTY_KICKS_MINI_GAMES_T_C"></h3>
-                  <p data-i18n="world_up_page.PENALTY_KICKS_MINI_GAMES_T_C__description"></p>
-                  <div class="title" data-i18n="world_up_page.How_to_Claim"></div>
-                  <p data-i18n="world_up_page.How_to_Claim__description"></p>
-                  <div class="title" data-i18n="world_up_page.Rules"></div>
-                  <p data-i18n="world_up_page.Rules__description1"></p>
-                  <p data-i18n="world_up_page.Rules__description2"></p>
-                  <p data-i18n="world_up_page.Rules__description3"></p>
-                </div>
+              <div class="tab-pane fade" id="daily-prediction" role="tabpanel" aria-labelledby="daily-prediction-tab">
+                @@include('../components/daily-prediction.html')
               </div>
             </div>
           </div>
