@@ -1,16 +1,40 @@
 <div class="modal fade" id="howToPlayModal" tabindex="-1" aria-labelledby="howToPlayModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="howToPlayModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
+      <div class="modal-content-all">
+        <div class="modal-header">
+          <span class="modal-header__title" data-i18n="world_up_page.how_to_play_title"></span>
+        </div>
+        <div class="modal-body">
+          <div class="row steps">
+            <div class="col-12 col-lg-4">
+              <div class="steps__item">
+                <span class="steps__item__title" data-i18n="world_up_page.how_to_play_step1__title"></span>
+                <img class="steps__item__img" src="assets/images/world-cup/Login.png" />
+                <div class="steps__item__description" data-i18n="world_up_page.how_to_play_step1__description"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="steps__item">
+                <span class="steps__item__title" data-i18n="world_up_page.how_to_play_step2__title"></span>
+                <img class="steps__item__img" src="assets/images/world-cup/Ticket.png" />
+                <div class="steps__item__description" data-i18n="world_up_page.how_to_play_step2__description"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="steps__item">
+                <span class="steps__item__title" data-i18n="world_up_page.how_to_play_step3__title"></span>
+                <img class="steps__item__img" src="assets/images/world-cup/Money.png" />
+                <div class="steps__item__description" data-i18n="world_up_page.how_to_play_step3__description"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn" data-bs-dismiss="modal">
+          <img src="assets/images/world-cup/close.png" />
+        </button>
       </div>
     </div>
   </div>

@@ -1687,3 +1687,89 @@ span.input-group-text[data-i18n="To"] {
     opacity: 0.7; }
   .world-cup-page__container__how-to-play-btn:active, .world-cup-page__container__how-to-play-btn:focus {
     box-shadow: none !important; }
+
+.world-cup-page #howToPlayModal .modal-dialog .modal-content {
+  background: transparent;
+  box-shadow: none;
+  border: none; }
+  .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-content-all {
+    background-image: url(../images/world-cup/how-to-play-bg.png);
+    background-size: initial;
+    background-repeat: repeat-y;
+    background-position: top;
+    border: 2px solid #b4b4b4;
+    border-radius: 15px; }
+  .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-footer {
+    border-top: none;
+    place-content: center;
+    padding: 0; }
+    .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-footer .btn {
+      padding: 0; }
+      .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-footer .btn img {
+        max-width: 50px; }
+      .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-footer .btn:active, .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-footer .btn:focus {
+        box-shadow: none; }
+  .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-header {
+    border-bottom: none;
+    padding: 0;
+    place-content: center; }
+    .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-header__title {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../images/world-cup/bar-bg.png);
+      background-position: center;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 600;
+      color: #fff;
+      padding: 3px 40px;
+      height: 35px;
+      display: flex;
+      place-content: center;
+      place-items: center; }
+  .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-body {
+    padding: 0 15px 15px;
+    text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-body {
+        background-image: url(../images/world-cup/how-to-play-mobile-bg.png); } }
+    .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-body .steps {
+      padding: 30px 30px 0; }
+      @media only screen and (max-width: 576px) {
+        .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-body .steps {
+          padding: 15px 15px 0; } }
+      .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-body .steps > div {
+        margin-bottom: 20px; }
+      .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-body .steps__item {
+        border: 2px solid #e24b72;
+        background-color: #727272;
+        border-radius: 15px;
+        height: 100%;
+        padding: 0 15px 15px; }
+        .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-body .steps__item__title {
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(../images/world-cup/bar-child-bg.png);
+          background-position: center;
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 16px;
+          font-weight: 600;
+          color: #fff;
+          padding: 3px 15px;
+          min-height: 25px;
+          display: flex;
+          place-content: center;
+          place-items: center; }
+        .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-body .steps__item__img {
+          height: 100px;
+          padding: 10px; }
+        .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-body .steps__item__description {
+          font-size: 14px;
+          font-weight: 400;
+          color: #fff;
+          min-height: 50px;
+          display: flex;
+          place-content: center;
+          place-items: center; }
