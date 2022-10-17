@@ -536,6 +536,10 @@
           background-position: top;
           border: 2px solid #b4b4b4;
           border-radius: 15px;
+
+          @media only screen and (max-width: 768px) {
+            background-image: url(../images/world-cup/how-to-play-mobile-bg.png);
+          }
         }
 
         .modal-footer {
@@ -583,10 +587,6 @@
         .modal-body {
           padding: 0 15px 15px;
           text-align: center;
-
-          @media only screen and (max-width: 768px) {
-            background-image: url(../images/world-cup/how-to-play-mobile-bg.png);
-          }
 
           .steps {
             padding: 30px 30px 0;

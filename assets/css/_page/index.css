@@ -1248,6 +1248,9 @@
     background-position: top;
     border: 2px solid #b4b4b4;
     border-radius: 15px; }
+    @media only screen and (max-width: 768px) {
+      .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-content-all {
+        background-image: url(../images/world-cup/how-to-play-mobile-bg.png); } }
   .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-footer {
     border-top: none;
     place-content: center;
@@ -1280,9 +1283,6 @@
   .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-body {
     padding: 0 15px 15px;
     text-align: center; }
-    @media only screen and (max-width: 768px) {
-      .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-body {
-        background-image: url(../images/world-cup/how-to-play-mobile-bg.png); } }
     .world-cup-page #howToPlayModal .modal-dialog .modal-content .modal-body .steps {
       padding: 30px 30px 0; }
       @media only screen and (max-width: 576px) {
