@@ -914,7 +914,8 @@
     text-shadow: none;
     min-height: 60px;
     border-radius: 0;
-    font-size: 18px; }
+    font-size: 18px;
+    height: 100%; }
     .world-cup-page__container__tab .nav-tabs .nav-item .nav-link.active {
       color: #fff;
       text-shadow: none;
@@ -1322,3 +1323,28 @@
           display: flex;
           place-content: center;
           place-items: center; }
+
+.event-icon {
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: flex-end;
+  gap: 10px; }
+  @media only screen and (max-width: 576px) {
+    .event-icon {
+      right: 20px;
+      bottom: 30px; } }
+  .event-icon img {
+    max-width: 120px; }
+    @media only screen and (max-width: 576px) {
+      .event-icon img {
+        max-width: 90px; } }
+  .event-icon .btn-close {
+    position: initial !important;
+    padding: 5px; }
+    .event-icon .btn-close:focus, .event-icon .btn-close:active {
+      box-shadow: none !important; }
