@@ -1,12 +1,32 @@
-.world-cup-block {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+// @import url('http://fonts.cdnfonts.com/css/aldo-the-apache');
+@font-face {
+  font-family: 'Aldo the Apache';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Aldo the Apache'), url('../fonts/AldotheApache.woff') format('woff');
+}
+
+
+@import "./_base/index.scss";
+@import "./_base/sidebar.scss";
+
+// PAGE
+@import "./_page/index.scss";
+
+
+
+.event-block {
   padding-bottom: 0;
+  max-width: 768px;
+  margin: auto;
+  padding-top: 10px;
+  margin-top: 50px;
+
 
   &__content {
-    padding: 30px 0;
+    padding: 30px 25px;
     position: relative;
-    background-size: cover;
-    background-repeat: repeat-y;
-    background-image: url(../images/f70f8b4384ee4d20a512f8fae66140d8.jpeg);
   }
 
   .block-content {
@@ -111,130 +131,6 @@
   }
 }
 
-#selectBankModal {
-  .select-bank-modal {
-    padding: 15px 50px;
-
-    &__items {
-      display: flex;
-      place-content: center;
-      place-items: center;
-      flex-direction: column;
-      gap: 15px;
-      min-height: 100px;
-      padding: 15px;
-      background: #FFFFFF;
-      border: 1px solid #EBEBEB;
-      box-sizing: border-box;
-      border-radius: 10px;
-      margin-bottom: 30px;
-      cursor: pointer;
-
-      &:hover {
-        border-color: #597EF7;
-      }
-
-
-      &__img {
-        height: 36px;
-        text-align: center;
-
-        img {
-          max-width: 36px;
-          max-height: 36px;
-        }
-      }
-
-      &__content {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 14px;
-        color: #000000;
-      }
-    }
-  }
-}
-
-#chooseWalletModal {
-  .choose-modal {
-    &__items {
-      display: flex;
-      place-content: space-between;
-      place-items: center;
-      gap: 15px;
-      border-bottom: 1px solid #f2f2f2;
-      padding: 15px;
-
-      &__img {
-        min-width: 50px;
-        text-align: center;
-      }
-
-      &__content {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 14px;
-        color: #000000;
-      }
-
-      .checkmark {
-        opacity: 0;
-        transition: .3s
-      }
-
-      input {
-        &:checked~.checkmark {
-          opacity: 1;
-        }
-      }
-    }
-  }
-}
-
-
-.mbsc-popup {
-  &-content {
-    .mbsc-ios.mbsc-scroller {
-      background-color: #fff !important;
-
-      .mbsc-ios.mbsc-scroller-wheel-group-cont {
-        padding: 0;
-
-        .mbsc-ios.mbsc-scroller-wheel-line {
-          margin: 0;
-          border-radius: 0;
-          border-top: 1px solid #eee;
-          border-bottom: 1px solid #eee;
-          background: rgba(255, 255, 255, 0);
-
-
-        }
-      }
-    }
-  }
-
-  .mbsc-ios.mbsc-scroller-wheel-cont-bottom.mbsc-scroller-wheel-cont-3d,
-  .mbsc-ios.mbsc-scroller-wheel-cont-top.mbsc-scroller-wheel-cont-3d {
-    background: #fff;
-  }
-
-  .mbsc-ios.mbsc-scroller-wheel-item.mbsc-selected {
-    background: #fff;
-  }
-
-  .mbsc-ios.mbsc-scroller-wheel-overlay-bottom,
-  .mbsc-ios.mbsc-scroller-wheel-overlay-top {
-    background: transparent !important;
-  }
-
-  .mbsc-ios.mbsc-scroller-wheel-item {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 16px;
-    color: #000000;
-  }
-}
-
 .back-to-top {
   margin-top: 20px;
   padding: 20px;
@@ -257,16 +153,6 @@
     border-radius: 50px;
     -webkit-box-shadow: 0px 4px 10px 2px rgba(1, 1, 1, 0.1);
     box-shadow: 0px 4px 10px 2px rgba(1, 1, 1, 0.1);
-  }
-}
-
-#collapseCustomDate {
-  .action {
-    a {
-      display: flex;
-      place-content: center;
-      place-items: center;
-    }
   }
 }
 

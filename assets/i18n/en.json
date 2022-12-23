@@ -91,9 +91,9 @@
     "": ""
   },
   "world_up_page": {
-    "header": "World Cup Penalty Shoot",
-    "top_banner": "<img src=\"assets/images/world-cup/en/BANNERTOP.jpg\" />",
-    "top_banner_mobile": "<img src=\"assets/images/world-cup/en/mobile-banner.jpeg\" />",
+    "header": "new year Penalty Shoot",
+    "top_banner": "<img src=\"assets/images/new-year/banner.png\" />",
+    "top_banner_mobile": "<img src=\"assets/images/new-year/banner-MYR-mobile.png\" />",
     "how_to_play": "How To Play",
     "YOUR_PRIZE_HISTORY": "YOUR PRIZE HISTORY",
     "Date": "Date",

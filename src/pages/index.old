@@ -4,7 +4,7 @@
   <body>
     
     <!-- Content -->
-    <section class="main world-cup-block world-cup-page">
+    <section class="main event-block event-page">
       <!-- @@include('../components/base/navbar.html', {active: 1}) -->
       <div class="d-none d-lg-block">
         @@include('../components/base/navbar-without-login.html', {active: 1})
@@ -14,11 +14,11 @@
       </div>
 
       <!-- content -->
-      <div class="world-cup-page__top-banner d-none d-lg-block" data-i18n="world_up_page.top_banner"></div>
-      <div class="world-cup-page__top-banner d-block d-lg-none" data-i18n="world_up_page.top_banner_mobile"></div>
-      <div class="world-cup-block__content">
-        <div class="container world-cup-page__container">
-          <div class="world-cup-page__container__tab">
+      <div class="event-page__top-banner d-none d-lg-block" data-i18n="world_up_page.top_banner"></div>
+      <div class="event-page__top-banner d-block d-lg-none" data-i18n="world_up_page.top_banner_mobile"></div>
+      <div class="event-block__content">
+        <div class="container event-page__container">
+          <div class="event-page__container__tab">
             <ul class="nav nav-tabs nav-fill" role="tablist">
               <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="penalty-shoot-tab" data-bs-toggle="tab" data-bs-target="#penalty-shoot" type="button" role="tab" aria-controls="penalty-shoot" aria-selected="true" data-i18n="world_up_page.PENALTY_SHOOT"></button>

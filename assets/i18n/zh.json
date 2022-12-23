@@ -92,8 +92,8 @@
   },
   "world_up_page": {
     "header": "世界杯点球挑战赛",
-    "top_banner": "<img src=\"assets/images/world-cup/zh/BANNER-TOP.jpg\" />",
-    "top_banner_mobile": "<img src=\"assets/images/world-cup/zh/BANNER-MOBILE.jpg\" />",
+    "top_banner": "<img src=\"assets/images/world-cup/zh/banner-SGD.png\" />",
+    "top_banner_mobile": "<img src=\"assets/images/new-year/banner-SGD-mobile.png\" />",
     "how_to_play": "游戏教学",
     "YOUR_PRIZE_HISTORY": "您的获奖记录",
     "Date": "日期",

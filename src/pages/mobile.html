@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="">
-  @@include('../components/base/header.html', {title: 'World Cup'})
+  @@include('../components/base/header-mobile.html', {title: 'World Cup'})
   <body>
     
     <!-- Content -->
     <section class="main event-block event-page">
-      @@include('../components/base/navbar-without-login.html', {active: 1})
+      @@include('../components/base/navbar-child.html', {back_url: '/', title: 'world_up_page.header'})
 
       <!-- content -->
-      <div class="event-page__top-banner container" data-i18n="world_up_page.top_banner"></div>
+      <div class="event-page__top-banner" data-i18n="world_up_page.top_banner_mobile"></div>
       <div class="event-block__content">
         <div class="container event-page__container">
           @@include('../components/content.html')
         </div>
       </div>
       <!-- content -->
+
+      @@include('../components/base/navbar-bottom-mobile.html', {active: 0})
     </section>
     
     @@include('../components/base/footer.html')

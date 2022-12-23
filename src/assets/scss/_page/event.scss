@@ -1,4 +1,12 @@
-.world-cup-page {
+.event-page {
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-image: url(../images/new-year/BG-PC1.png);
+
+  @media only screen and (max-width: 768px) {
+    background-image: url(../images/new-year/BG-Mobile-1.png);
+  }
+
   &__top-banner {
     img {
       width: 100%;
@@ -7,6 +15,9 @@
         min-height: 200px;
         object-fit: cover;
       }
+    }
+    @media only screen and (max-width: 768px) {
+      padding: 0 15px;
     }
   }
 
@@ -92,7 +103,7 @@
       height: 100%;
 
       // background-size: 101%;
-      background-size: cover;
+      background-size: initial;
       background-repeat: no-repeat;
       background-image: url(../images/world-cup/en/box-bg.png);
       background-position: top;
@@ -111,11 +122,6 @@
       }
 
       &.event-detail {
-        // background-size: cover;
-        // background-repeat: no-repeat;
-        // background-image: url(../images/world-cup/en/Line-frame.png);
-        // background-position: top;
-        // padding: 0 30px 30px;
         background-image: none;
         position: relative;
         padding-bottom: 50px;
