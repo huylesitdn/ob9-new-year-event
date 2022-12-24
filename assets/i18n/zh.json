@@ -90,7 +90,7 @@
     "copyright": "版权所有 © 2021-2022 欧宝 保留所有权",
     "": ""
   },
-  "world_up_page": {
+  "event_page": {
     "header": "世界杯点球挑战赛",
     "top_banner": "<img src=\"assets/images/world-cup/zh/banner-SGD.png\" />",
     "top_banner_mobile": "<img src=\"assets/images/new-year/banner-SGD-mobile.png\" />",
@@ -98,8 +98,8 @@
     "YOUR_PRIZE_HISTORY": "您的获奖记录",
     "Date": "日期",
     "Realbet": "有效投注额",
-    "PENALTY_KICKS_MINI_GAMES_T_C": "点球挑战赛活动规则",
-    "PENALTY_KICKS_MINI_GAMES_T_C__description": "所有欧宝会员都有权参与这个小游戏。活动日期为 2022 年 11 月 19 日 12:00:00 (GMT+8) 至 2022 年 12 月 18 日 23:59:59 (GMT+8)。",
+    "title": "农历新年红包雨小游戏活动规则",
+    "description": "所有欧宝会员都有权参与这个小游戏。活动日期为 2023 年 1 月 15日 12:00:00 (GMT+8) 至 2023 年 1 月 30 日 23:59:59 (GMT+8) 。",
     "How_to_Claim": "如何兑换",
     "How_to_Claim__description": "要兑换小游戏门票，会员必须存入最低单笔存款 MYR100 才能获得 1 张门票。",
     "Rules": "活动规则",
@@ -169,7 +169,7 @@
     "how_to_play_step2__title": "步骤2",
     "how_to_play_step2__description": "活动期间每日单笔存款 MYR100 可赢取 1 张门票",
     "how_to_play_step3__title": "步骤3",
-    "how_to_play_step3__description": "射球得分并赢取现金！",
+    "how_to_play_step3__description": "点击红包并赢取现金！",
     "event_icon": "<img src=\"assets/images/world-cup/en/CN-GIF.gif\" />",
     "": "",
     "": "" 

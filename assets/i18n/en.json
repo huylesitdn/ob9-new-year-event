@@ -90,16 +90,16 @@
     "copyright": "© 2021-2022 OB Entertainment. All rights reserved.",
     "": ""
   },
-  "world_up_page": {
-    "header": "new year Penalty Shoot",
+  "event_page": {
+    "header": "CHINESE NEW YEAR ANGPOW RAIN",
     "top_banner": "<img src=\"assets/images/new-year/banner.png\" />",
     "top_banner_mobile": "<img src=\"assets/images/new-year/banner-MYR-mobile.png\" />",
     "how_to_play": "How To Play",
     "YOUR_PRIZE_HISTORY": "YOUR PRIZE HISTORY",
     "Date": "Date",
     "Realbet": "Realbet",
-    "PENALTY_KICKS_MINI_GAMES_T_C": "PENALTY KICKS MINI GAMES T&C",
-    "PENALTY_KICKS_MINI_GAMES_T_C__description": "All OB members are entitled to participate and play in this Mini Game. Promotion period starts from 19st Nov 2022 12:00:00 (GMT+8) until 18th Dec 2022 23:59:59 (GMT+8).",
+    "title": "CHINESE NEW YEAR ANGPOW RAIN MINI GAMES T&C",
+    "description": "All OB members are entitled to participate and play in this Mini Game. Promotion period starts from 15th Jan 2022 12:00:00 (GMT+8) until 30th Jan 2023 23:59:59 (GMT+8).",
     "How_to_Claim": "How to Claim",
     "How_to_Claim__description": "To redeem the mini game ticket, members are required to make a single minimum deposit of MYR100 to get 1 ticket.",
     "Rules": "Rules",
@@ -169,7 +169,7 @@
     "how_to_play_step2__title": "Step 2",
     "how_to_play_step2__description": "Daily single deposit MYR100 to earn 1 ticket during the event period",
     "how_to_play_step3__title": "Step 3",
-    "how_to_play_step3__description": "Score the goals to earn cash!",
+    "how_to_play_step3__description": "Catch the Angpow to earn cash!",
     "event_icon": "<img src=\"assets/images/world-cup/en/ENG-GIF.gif\" />",
     "": "",
     "": "" 
