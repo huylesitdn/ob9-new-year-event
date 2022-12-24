@@ -112,6 +112,10 @@
       font-size: 14px;
       line-height: 25px;
 
+      @media only screen and (max-width: 768px) {
+        background-repeat: cover;
+      }
+
       p {
         margin-bottom: 10px;
         line-height: 20px;
