@@ -1411,6 +1411,9 @@ span.input-group-text[data-i18n="To"] {
     background-position: top;
     font-size: 14px;
     line-height: 25px; }
+    @media only screen and (max-width: 768px) {
+      .event-page__container__block_content {
+        background-size: cover; } }
     .event-page__container__block_content p {
       margin-bottom: 10px;
       line-height: 20px;
